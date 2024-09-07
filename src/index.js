@@ -3,18 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import { HashRouter, Routes, Route} from 'react-router-dom';
 import Form from './components/form';
 import Output from './components/output';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Form/>}/>
         <Route path="/output" element={<Output/>}/>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
