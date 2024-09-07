@@ -42,7 +42,7 @@ const Form = () => {
   const history = useNavigate();
 
   const onsubmit = (data) => {
-    history("/output", {state: {data:data}})
+    history("/output", {state: {data:data}, replace: true})
   }
   
 

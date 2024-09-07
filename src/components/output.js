@@ -1,7 +1,7 @@
 import { AppBar, Container, Toolbar, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Grid, Button } from '@mui/material';
 import { useLocation } from 'react-router-dom';
 import { DataGrid } from '@mui/x-data-grid';
-import AdbIcon from '@mui/icons-material/Adb';
+import LensBlurIcon from '@mui/icons-material/LensBlur';
 import { useNavigate } from 'react-router-dom';
 
 const Output = () => {
@@ -24,7 +24,7 @@ const Output = () => {
     const navigate = useNavigate();
 
     const handleBack = () => {
-        navigate('/')
+        navigate('/', {replace: true})
     }
       
       const rows = [
@@ -37,7 +37,7 @@ const Output = () => {
         <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <LensBlurIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -56,7 +56,7 @@ const Output = () => {
           </Typography>
 
           
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <LensBlurIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
