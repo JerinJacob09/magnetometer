@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/magnetometer/static/css/main.e6c13ad2.css",
-    "main.js": "/magnetometer/static/js/main.50e40970.js",
+    "main.js": "/magnetometer/static/js/main.df14b180.js",
     "static/js/453.2f382161.chunk.js": "/magnetometer/static/js/453.2f382161.chunk.js",
     "service-worker.js": "/magnetometer/service-worker.js",
     "index.html": "/magnetometer/index.html",
     "main.e6c13ad2.css.map": "/magnetometer/static/css/main.e6c13ad2.css.map",
-    "main.50e40970.js.map": "/magnetometer/static/js/main.50e40970.js.map",
+    "main.df14b180.js.map": "/magnetometer/static/js/main.df14b180.js.map",
     "453.2f382161.chunk.js.map": "/magnetometer/static/js/453.2f382161.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.50e40970.js"
+    "static/js/main.df14b180.js"
   ]
 }
