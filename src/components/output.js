@@ -16,7 +16,7 @@ const Output = () => {
         if (input>=52 && input<=80 ){
             return 'No'
         }
-        else if(input>=37 && input<51){
+        else if(input>=37 && input<=51){
             return 'Yes'
         }
         return 'Sensor malfunction'
