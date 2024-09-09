@@ -12,24 +12,18 @@ const Output = () => {
         { field: 'availability', headerName: 'Availability', width: 150 },
       ];
 
-    const is_cat_present = (input) => {
-        if (input>=52 && input<=80 ){
-            return 'No'
+      const getAvailabilityForLot3 = (reading_1, reading_2, reading_3) => {
+        if (reading_1 < reading_3 && reading_3 < (reading_2 + 5)) {
+            return 'Yes';
+        } else if (reading_3 > reading_2) {
+            return 'No';
         }
-        else if(input>=37 && input<=51){
-            return 'Yes'
-        }
-        return 'Sensor malfunction'
-    }
-    const navigate = useNavigate();
-
-    const handleBack = () => {
-        navigate('/', {replace: true})
-    }
+        return 'Sensor malfunction';
+    };
       
       const rows = [
-        { id: "Lot 1", availability: is_cat_present(data['reading_1'])},
-        { id: "Lot 2", availability: is_cat_present(data['reading_2']) },
+        { id: "Normal Reading", availability: is_cat_present(data['reading_1'])},
+        { id: "One Car Reading", availability: is_cat_present(data['reading_2']) },
         { id: "Lot 3", availability: is_cat_present(data['reading_3']) }
       ];
     return (
